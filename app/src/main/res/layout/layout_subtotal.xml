@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+                                             android:layout_height="wrap_content"
+                                             xmlns:tools="http://schemas.android.com/tools">
+    <TextView
+            android:id="@+id/tv_subtotal_number"
+            tools:text="Subtotal{2 Items}"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dim_64dp"
+            android:textSize="@dimen/dim_16sp"
+            app:layout_constraintTop_toTopOf="@+id/tv_subtotal_price"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_subtotal_price"
+            app:layout_constraintEnd_toStartOf="@+id/tv_subtotal_price"/>
+
+    <TextView
+            android:id="@+id/tv_subtotal_price"
+            tools:text="$ 71.99"
+            android:layout_margin="@dimen/dim_16dp"
+            android:textSize="@dimen/dim_16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+</android.support.constraint.ConstraintLayout>
